@@ -16,5 +16,23 @@ using System.Globalization;
             p.Quantidade = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Dados dos produtos: " + p);
+
+            Console.WriteLine();
+            Console.Write("Digite o numero de produtos a ser adicionado no estoque: ");
+            int qte = int.Parse(Console.ReadLine());
+            p.AdicionarProdutos(qte);
+
+            Console.WriteLine();
+            Console.WriteLine( "Dados atulizados: " + p);
+
+            Console.WriteLine();
+            Console.Write("Digite o numero de produtos a ser removido no estoque: ");
+            qte = int.Parse(Console.ReadLine());
+            p.RemoverProdutos(qte);
+
+            Console.WriteLine();
+            Console.WriteLine( "Dados atulizados: " + p);
+
+
         }
     }
